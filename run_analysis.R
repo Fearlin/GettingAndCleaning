@@ -37,3 +37,4 @@ names(Full)[2] <-"Activity"
 ##Mini Final Data
 SubjectActivityGrouping <- aggregate(Full[,3:68],list(Subject=Full$Subject, Activity=Full$Activity),mean)
 write.table(SubjectActivityGrouping,"./tidyData.txt")
+SubjectActivityGrouping
